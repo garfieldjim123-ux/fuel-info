@@ -4,7 +4,7 @@
     "pending": {
       "event_id": "ff82151f67e1e90938da87c6dc2fff6f",
       "attempts": 1,
-      "status": "sending"
+      "status": "accepted"
     }
   }
 }
