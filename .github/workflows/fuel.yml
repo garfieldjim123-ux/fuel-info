@@ -1,0 +1,38 @@
+name: Fuel reminder
+on:
+  push:
+    branches: [main]
+    paths: ['data/check.json']
+  workflow_dispatch:
+    inputs:
+      test_email:
+        description: Send one explicitly marked test email
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: fuel-mailer
+  cancel-in-progress: false
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m unittest discover -s tests -v
+      - name: Validate and deliver
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          TEST_EMAIL: ${{ inputs.test_email }}
+        run: |
+          if [ "$TEST_EMAIL" = "true" ]; then
+            python fuel.py --test-email
+          else
+            python fuel.py
+          fi
