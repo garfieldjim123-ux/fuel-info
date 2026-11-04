@@ -1,6 +1,6 @@
 {
-  "purpose": "explicitly_labeled_connectivity_test",
+  "purpose": "verify_deduplication_without_resending",
   "recipient": "encrypted_SMTP_USER_only",
   "requested_on": "2026-11-04",
-  "trigger_revision": 3
+  "trigger_revision": 4
 }
