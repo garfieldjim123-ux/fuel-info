@@ -2,7 +2,7 @@ name: Fuel reminder
 on:
   push:
     branches: [main]
-    paths: ['data/check.json']
+    paths: ['data/check.json', 'data/test-email-request.json']
   workflow_dispatch:
     inputs:
       test_email:
@@ -29,7 +29,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-          TEST_EMAIL: ${{ inputs.test_email }}
+          TEST_EMAIL: ${{ inputs.test_email || contains(github.event.head_commit.added, 'data/test-email-request.json') }}
         run: |
           if [ "$TEST_EMAIL" = "true" ]; then
             python fuel.py --test-email
