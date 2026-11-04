@@ -2,5 +2,5 @@
   "purpose": "explicitly_labeled_connectivity_test",
   "recipient": "encrypted_SMTP_USER_only",
   "requested_on": "2026-11-04",
-  "trigger_revision": 2
+  "trigger_revision": 3
 }
