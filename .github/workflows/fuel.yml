@@ -29,7 +29,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-          TEST_EMAIL: ${{ inputs.test_email || contains(github.event.head_commit.added, 'data/test-email-request.json') }}
+          TEST_EMAIL: ${{ inputs.test_email || contains(github.event.head_commit.message, '[fuel-mail-test]') }}
         run: |
           if [ "$TEST_EMAIL" = "true" ]; then
             python fuel.py --test-email
