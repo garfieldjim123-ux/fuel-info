@@ -1,0 +1,29 @@
+{
+  "region": "宁波",
+  "grade": "92",
+  "checked_at": "2026-11-04T15:30:00+08:00",
+  "window_date": "2026-11-12",
+  "calendar_source": {
+    "url": "https://www.bjnews.com.cn/detail/1793278913129529.html",
+    "published_at": "2026-10-29T22:12:00+08:00",
+    "quote": "下一轮调价窗口将于2026年11月12日24时开启。"
+  },
+  "current_price": "8.85",
+  "price_region": "浙江",
+  "price_basis": "provincial_maximum",
+  "price_latest_verified": true,
+  "delta_per_litre": null,
+  "delta_region": "浙江",
+  "delta_unit": "元/升",
+  "delta_window_date": "2026-11-12",
+  "status": "missing",
+  "sources": {
+    "price": {
+      "url": "https://www.thepaper.cn/newsDetail_forward_34360414",
+      "published_at": "2026-10-29T17:24:00+08:00",
+      "quote": "浙江油价调整：今日24时起，92号汽油每升8.85元。"
+    },
+    "delta": null
+  },
+  "notes": "已读取原文核实日历和浙江公开参考价。距离窗口超过3个自然日，按服务规则暂不填预测。省级最高零售价不等同于特定油站成交价。"
+}
