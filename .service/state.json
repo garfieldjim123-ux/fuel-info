@@ -1,10 +1,8 @@
 {
   "windows": {},
   "test": {
-    "pending": {
-      "event_id": "ff82151f67e1e90938da87c6dc2fff6f",
-      "attempts": 1,
-      "status": "accepted"
-    }
+    "last_action": "test",
+    "sequence": 1,
+    "last_accepted_at": "2026-11-04T16:05:22.045776+08:00"
   }
 }
