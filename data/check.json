@@ -1,29 +1,32 @@
 {
   "region": "宁波",
   "grade": "92",
-  "checked_at": "2026-11-04T15:30:00+08:00",
+  "checked_at": "2026-11-05T09:02:14+08:00",
   "window_date": "2026-11-12",
   "calendar_source": {
     "url": "https://www.bjnews.com.cn/detail/1793278913129529.html",
     "published_at": "2026-10-29T22:12:00+08:00",
     "quote": "下一轮调价窗口将于2026年11月12日24时开启。"
   },
-  "current_price": "8.85",
+  "current_price": null,
   "price_region": "浙江",
   "price_basis": "provincial_maximum",
-  "price_latest_verified": true,
+  "price_latest_verified": false,
   "delta_per_litre": null,
   "delta_region": "浙江",
   "delta_unit": "元/升",
   "delta_window_date": "2026-11-12",
   "status": "missing",
   "sources": {
-    "price": {
-      "url": "https://www.thepaper.cn/newsDetail_forward_34360414",
-      "published_at": "2026-10-29T17:24:00+08:00",
-      "quote": "浙江油价调整：今日24时起，92号汽油每升8.85元。"
-    },
+    "price": null,
     "delta": null
   },
-  "notes": "已读取原文核实日历和浙江公开参考价。距离窗口超过3个自然日，按服务规则暂不填预测。省级最高零售价不等同于特定油站成交价。"
+  "last_official_window_date": "2026-10-29",
+  "last_official_window_source": {
+    "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261029_1408449.html",
+    "published_at": "2026-10-29T00:00:00+08:00",
+    "quote": "自10月29日24时起，国内汽、柴油（标准品）价格每吨分别应上调440元、420元。"
+  },
+  "official_updates_checked_url": "https://www.ndrc.gov.cn/xwdt/xwfb/wap_index.html",
+  "notes": "已重读国家发改委10月29日公告及更新至11月4日的新闻发布列表，未见更晚已生效调整；新京报原文明确下一轮11月12日24时。浙江省发改委网页本次超时，澎湃号转载未能核实具体发布机构身份，按来源限制将当前升价留空，不沿用未充分核验的8.85元。距窗口标注日7个自然日，尚未进入提前3日范围，未采集预测、未生成加油建议。"
 }
