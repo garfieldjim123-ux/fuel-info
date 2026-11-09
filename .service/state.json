@@ -1,11 +1,9 @@
 {
   "windows": {
     "2026-11-12": {
-      "pending": {
-        "event_id": "1d0504cde3544e65061f3e765b90fd9e",
-        "attempts": 1,
-        "status": "accepted"
-      }
+      "last_action": "missing",
+      "sequence": 1,
+      "last_accepted_at": "2026-11-09T09:02:57.736159+08:00"
     }
   },
   "test": {
