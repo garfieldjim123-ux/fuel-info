@@ -1,5 +1,13 @@
 {
-  "windows": {},
+  "windows": {
+    "2026-11-12": {
+      "pending": {
+        "event_id": "1d0504cde3544e65061f3e765b90fd9e",
+        "attempts": 1,
+        "status": "sending"
+      }
+    }
+  },
   "test": {
     "last_action": "test",
     "sequence": 1,
